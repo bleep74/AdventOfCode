@@ -1,6 +1,8 @@
 #python script
 #day 2 challenge 1
+import time
 
+tstart = time.time()
 points = 0
 
 file1 = open('elves.txt','r')
@@ -36,9 +38,8 @@ for line in Lines:
 						points += 2
 					case "Z":
 						points += 6
-
-		
-
+						
 file1.close
-
 print("Total Points: {}".format(points))
+tstop = (time.time() - tstart)
+print ("Time : {}".format(tstop))

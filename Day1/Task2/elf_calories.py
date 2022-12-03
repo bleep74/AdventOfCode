@@ -1,5 +1,8 @@
 #python script
-#day 1 challenge 1
+#day 1 challenge 2
+import time
+
+tstart = time.time()
 
 highestElf = 0
 highestCalories = 0
@@ -30,5 +33,6 @@ elfArray.sort()
 
 topThreeElves = elfArray[len(elfArray)-1] + elfArray[len(elfArray)-2] + elfArray[len(elfArray)-3]
 
-
 print("Calorie Amount for top 3: {}".format(topThreeElves))
+tstop = (time.time() - tstart)
+print ("Time : {}".format(tstop))

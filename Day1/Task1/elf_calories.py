@@ -1,5 +1,8 @@
 #python script
 #day 1 challenge 1
+import time
+
+tstart = time.time()
 
 highestElf = 0
 highestCalories = 0
@@ -23,3 +26,5 @@ for line in Lines:
 
 file1.close
 print("Elf with highest calories: {} ; Calorie Amount: {}".format(highestElf, highestCalories))
+tstop = (time.time() - tstart)
+print ("Time : {}".format(tstop))

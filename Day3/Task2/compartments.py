@@ -1,6 +1,8 @@
 #python script
 #day 3 challenge 2
+import time
 
+tstart = time.time()
 file1 = open('elves.txt','r')
 
 elf = 1
@@ -38,5 +40,6 @@ for line in Lines:
 						break	
 
 print("Total Points: {}".format(points))
-			
+tstop = (time.time() - tstart)
+print ("Time : {}".format(tstop))			
 			
