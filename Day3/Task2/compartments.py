@@ -28,13 +28,11 @@ for line in Lines:
 				if letter in line:
 					if letter.islower():
 						points += ord(letter) - 96
-						print("Matching letter: {}  Points: {}".format(letter, ord(letter)-96))
 						elf=1
 						matchingList=""
 						break
 					else:
 						points += ord(letter) - 38
-						print("Matching letter: {}  Points: {}".format(letter, ord(letter)-38))
 						elf=1
 						matchingList=""
 						break	
