@@ -30,7 +30,7 @@ for line in Lines:
 	
 	while count < counter:
 		letter.append(crates[motion3][len(crates[motion3]) - 1])	
-		crates[motion3].pop(motion3)
+		crates[motion3].pop(len(crates[motion3]) - 1)
 		count +=1
 		
 	res = letter[::-1]
